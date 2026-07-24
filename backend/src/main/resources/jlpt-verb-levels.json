@@ -1,65 +1,1310 @@
-[
-  {"word":"食べる","reading":"たべる","level":"N5","commonRank":1},
-  {"word":"行く","reading":"いく","level":"N5","commonRank":2},
-  {"word":"見る","reading":"みる","level":"N5","commonRank":3},
-  {"word":"する","reading":"する","level":"N5","commonRank":4},
-  {"word":"来る","reading":"くる","level":"N5","commonRank":5},
-  {"word":"ある","reading":"ある","level":"N5","commonRank":6},
-  {"word":"勉強する","reading":"べんきょうする","level":"N5","commonRank":7},
-  {"word":"飲む","reading":"のむ","level":"N5","commonRank":8},
-  {"word":"聞く","reading":"きく","level":"N5","commonRank":9},
-  {"word":"買う","reading":"かう","level":"N5","commonRank":10},
-  {"word":"起きる","reading":"おきる","level":"N5","commonRank":11},
-  {"word":"寝る","reading":"ねる","level":"N5","commonRank":12},
-  {"word":"会う","reading":"あう","level":"N5","commonRank":13},
-  {"word":"待つ","reading":"まつ","level":"N5","commonRank":14},
-  {"word":"分かる","reading":"わかる","level":"N5","commonRank":15},
-
-  {"word":"書く","reading":"かく","level":"N4","commonRank":1},
-  {"word":"読む","reading":"よむ","level":"N4","commonRank":2},
-  {"word":"話す","reading":"はなす","level":"N4","commonRank":3},
-  {"word":"帰る","reading":"かえる","level":"N4","commonRank":4},
-  {"word":"遊ぶ","reading":"あそぶ","level":"N4","commonRank":5},
-  {"word":"泳ぐ","reading":"およぐ","level":"N4","commonRank":6},
-  {"word":"始める","reading":"はじめる","level":"N4","commonRank":7},
-  {"word":"続ける","reading":"つづける","level":"N4","commonRank":8},
-  {"word":"乗る","reading":"のる","level":"N4","commonRank":9},
-  {"word":"降りる","reading":"おりる","level":"N4","commonRank":10},
-  {"word":"調べる","reading":"しらべる","level":"N4","commonRank":11},
-  {"word":"手伝う","reading":"てつだう","level":"N4","commonRank":12},
-  {"word":"間に合う","reading":"まにあう","level":"N4","commonRank":13},
-  {"word":"片付ける","reading":"かたづける","level":"N4","commonRank":14},
-  {"word":"見つける","reading":"みつける","level":"N4","commonRank":15},
-
-  {"word":"くださる","reading":"くださる","level":"N3","commonRank":1},
-  {"word":"なさる","reading":"なさる","level":"N3","commonRank":2},
-  {"word":"いらっしゃる","reading":"いらっしゃる","level":"N3","commonRank":3},
-  {"word":"選ぶ","reading":"えらぶ","level":"N3","commonRank":4},
-  {"word":"認める","reading":"みとめる","level":"N3","commonRank":5},
-  {"word":"比べる","reading":"くらべる","level":"N3","commonRank":6},
-  {"word":"伝える","reading":"つたえる","level":"N3","commonRank":7},
-  {"word":"増える","reading":"ふえる","level":"N3","commonRank":8},
-  {"word":"減る","reading":"へる","level":"N3","commonRank":9},
-  {"word":"決まる","reading":"きまる","level":"N3","commonRank":10},
-  {"word":"求める","reading":"もとめる","level":"N3","commonRank":11},
-  {"word":"続く","reading":"つづく","level":"N3","commonRank":12},
-  {"word":"含む","reading":"ふくむ","level":"N3","commonRank":13},
-  {"word":"避ける","reading":"さける","level":"N3","commonRank":14},
-  {"word":"支える","reading":"ささえる","level":"N3","commonRank":15},
-
-  {"word":"おっしゃる","reading":"おっしゃる","level":"N2","commonRank":1},
-  {"word":"防ぐ","reading":"ふせぐ","level":"N2","commonRank":2},
-  {"word":"省く","reading":"はぶく","level":"N2","commonRank":3},
-  {"word":"促す","reading":"うながす","level":"N2","commonRank":4},
-  {"word":"遂げる","reading":"とげる","level":"N2","commonRank":5},
-  {"word":"補う","reading":"おぎなう","level":"N2","commonRank":6},
-  {"word":"伴う","reading":"ともなう","level":"N2","commonRank":7},
-  {"word":"覆う","reading":"おおう","level":"N2","commonRank":8},
-  {"word":"整える","reading":"ととのえる","level":"N2","commonRank":9},
-  {"word":"取り組む","reading":"とりくむ","level":"N2","commonRank":10},
-  {"word":"見込む","reading":"みこむ","level":"N2","commonRank":11},
-  {"word":"引き受ける","reading":"ひきうける","level":"N2","commonRank":12},
-  {"word":"差し支える","reading":"さしつかえる","level":"N2","commonRank":13},
-  {"word":"設ける","reading":"もうける","level":"N2","commonRank":14},
-  {"word":"及ぼす","reading":"およぼす","level":"N2","commonRank":15}
+﻿[
+    {
+        "word":  "する",
+        "reading":  "する",
+        "level":  "N5",
+        "commonRank":  1
+    },
+    {
+        "word":  "来る",
+        "reading":  "くる",
+        "level":  "N5",
+        "commonRank":  2
+    },
+    {
+        "word":  "行く",
+        "reading":  "いく",
+        "level":  "N5",
+        "commonRank":  3
+    },
+    {
+        "word":  "帰る",
+        "reading":  "かえる",
+        "level":  "N5",
+        "commonRank":  4
+    },
+    {
+        "word":  "食べる",
+        "reading":  "たべる",
+        "level":  "N5",
+        "commonRank":  5
+    },
+    {
+        "word":  "飲む",
+        "reading":  "のむ",
+        "level":  "N5",
+        "commonRank":  6
+    },
+    {
+        "word":  "見る",
+        "reading":  "みる",
+        "level":  "N5",
+        "commonRank":  7
+    },
+    {
+        "word":  "聞く",
+        "reading":  "きく",
+        "level":  "N5",
+        "commonRank":  8
+    },
+    {
+        "word":  "読む",
+        "reading":  "よむ",
+        "level":  "N5",
+        "commonRank":  9
+    },
+    {
+        "word":  "書く",
+        "reading":  "かく",
+        "level":  "N5",
+        "commonRank":  10
+    },
+    {
+        "word":  "話す",
+        "reading":  "はなす",
+        "level":  "N5",
+        "commonRank":  11
+    },
+    {
+        "word":  "言う",
+        "reading":  "いう",
+        "level":  "N5",
+        "commonRank":  12
+    },
+    {
+        "word":  "会う",
+        "reading":  "あう",
+        "level":  "N5",
+        "commonRank":  13
+    },
+    {
+        "word":  "買う",
+        "reading":  "かう",
+        "level":  "N5",
+        "commonRank":  14
+    },
+    {
+        "word":  "売る",
+        "reading":  "うる",
+        "level":  "N5",
+        "commonRank":  15
+    },
+    {
+        "word":  "寝る",
+        "reading":  "ねる",
+        "level":  "N5",
+        "commonRank":  16
+    },
+    {
+        "word":  "起きる",
+        "reading":  "おきる",
+        "level":  "N5",
+        "commonRank":  17
+    },
+    {
+        "word":  "休む",
+        "reading":  "やすむ",
+        "level":  "N5",
+        "commonRank":  18
+    },
+    {
+        "word":  "働く",
+        "reading":  "はたらく",
+        "level":  "N5",
+        "commonRank":  19
+    },
+    {
+        "word":  "教える",
+        "reading":  "おしえる",
+        "level":  "N5",
+        "commonRank":  20
+    },
+    {
+        "word":  "習う",
+        "reading":  "ならう",
+        "level":  "N5",
+        "commonRank":  21
+    },
+    {
+        "word":  "分かる",
+        "reading":  "わかる",
+        "level":  "N5",
+        "commonRank":  22
+    },
+    {
+        "word":  "知る",
+        "reading":  "しる",
+        "level":  "N5",
+        "commonRank":  23
+    },
+    {
+        "word":  "思う",
+        "reading":  "おもう",
+        "level":  "N5",
+        "commonRank":  24
+    },
+    {
+        "word":  "ある",
+        "reading":  "ある",
+        "level":  "N5",
+        "commonRank":  25
+    },
+    {
+        "word":  "いる",
+        "reading":  "いる",
+        "level":  "N5",
+        "commonRank":  26
+    },
+    {
+        "word":  "持つ",
+        "reading":  "もつ",
+        "level":  "N5",
+        "commonRank":  27
+    },
+    {
+        "word":  "待つ",
+        "reading":  "まつ",
+        "level":  "N5",
+        "commonRank":  28
+    },
+    {
+        "word":  "立つ",
+        "reading":  "たつ",
+        "level":  "N5",
+        "commonRank":  29
+    },
+    {
+        "word":  "座る",
+        "reading":  "すわる",
+        "level":  "N5",
+        "commonRank":  30
+    },
+    {
+        "word":  "入る",
+        "reading":  "はいる",
+        "level":  "N5",
+        "commonRank":  31
+    },
+    {
+        "word":  "出る",
+        "reading":  "でる",
+        "level":  "N5",
+        "commonRank":  32
+    },
+    {
+        "word":  "開ける",
+        "reading":  "あける",
+        "level":  "N5",
+        "commonRank":  33
+    },
+    {
+        "word":  "閉める",
+        "reading":  "しめる",
+        "level":  "N5",
+        "commonRank":  34
+    },
+    {
+        "word":  "開く",
+        "reading":  "あく",
+        "level":  "N5",
+        "commonRank":  35
+    },
+    {
+        "word":  "閉まる",
+        "reading":  "しまる",
+        "level":  "N5",
+        "commonRank":  36
+    },
+    {
+        "word":  "使う",
+        "reading":  "つかう",
+        "level":  "N5",
+        "commonRank":  37
+    },
+    {
+        "word":  "作る",
+        "reading":  "つくる",
+        "level":  "N5",
+        "commonRank":  38
+    },
+    {
+        "word":  "住む",
+        "reading":  "すむ",
+        "level":  "N5",
+        "commonRank":  39
+    },
+    {
+        "word":  "歩く",
+        "reading":  "あるく",
+        "level":  "N5",
+        "commonRank":  40
+    },
+    {
+        "word":  "走る",
+        "reading":  "はしる",
+        "level":  "N5",
+        "commonRank":  41
+    },
+    {
+        "word":  "泳ぐ",
+        "reading":  "およぐ",
+        "level":  "N5",
+        "commonRank":  42
+    },
+    {
+        "word":  "乗る",
+        "reading":  "のる",
+        "level":  "N5",
+        "commonRank":  43
+    },
+    {
+        "word":  "降りる",
+        "reading":  "おりる",
+        "level":  "N5",
+        "commonRank":  44
+    },
+    {
+        "word":  "着る",
+        "reading":  "きる",
+        "level":  "N5",
+        "commonRank":  45
+    },
+    {
+        "word":  "脱ぐ",
+        "reading":  "ぬぐ",
+        "level":  "N5",
+        "commonRank":  46
+    },
+    {
+        "word":  "洗う",
+        "reading":  "あらう",
+        "level":  "N5",
+        "commonRank":  47
+    },
+    {
+        "word":  "切る",
+        "reading":  "きる",
+        "level":  "N5",
+        "commonRank":  48
+    },
+    {
+        "word":  "取る",
+        "reading":  "とる",
+        "level":  "N5",
+        "commonRank":  49
+    },
+    {
+        "word":  "置く",
+        "reading":  "おく",
+        "level":  "N5",
+        "commonRank":  50
+    },
+    {
+        "word":  "送る",
+        "reading":  "おくる",
+        "level":  "N5",
+        "commonRank":  51
+    },
+    {
+        "word":  "借りる",
+        "reading":  "かりる",
+        "level":  "N5",
+        "commonRank":  52
+    },
+    {
+        "word":  "貸す",
+        "reading":  "かす",
+        "level":  "N5",
+        "commonRank":  53
+    },
+    {
+        "word":  "返す",
+        "reading":  "かえす",
+        "level":  "N5",
+        "commonRank":  54
+    },
+    {
+        "word":  "呼ぶ",
+        "reading":  "よぶ",
+        "level":  "N5",
+        "commonRank":  55
+    },
+    {
+        "word":  "遊ぶ",
+        "reading":  "あそぶ",
+        "level":  "N5",
+        "commonRank":  56
+    },
+    {
+        "word":  "歌う",
+        "reading":  "うたう",
+        "level":  "N5",
+        "commonRank":  57
+    },
+    {
+        "word":  "始まる",
+        "reading":  "はじまる",
+        "level":  "N5",
+        "commonRank":  58
+    },
+    {
+        "word":  "終わる",
+        "reading":  "おわる",
+        "level":  "N5",
+        "commonRank":  59
+    },
+    {
+        "word":  "始める",
+        "reading":  "はじめる",
+        "level":  "N4",
+        "commonRank":  1
+    },
+    {
+        "word":  "続ける",
+        "reading":  "つづける",
+        "level":  "N4",
+        "commonRank":  2
+    },
+    {
+        "word":  "止める",
+        "reading":  "とめる",
+        "level":  "N4",
+        "commonRank":  3
+    },
+    {
+        "word":  "止まる",
+        "reading":  "とまる",
+        "level":  "N4",
+        "commonRank":  4
+    },
+    {
+        "word":  "決める",
+        "reading":  "きめる",
+        "level":  "N4",
+        "commonRank":  5
+    },
+    {
+        "word":  "決まる",
+        "reading":  "きまる",
+        "level":  "N4",
+        "commonRank":  6
+    },
+    {
+        "word":  "考える",
+        "reading":  "かんがえる",
+        "level":  "N4",
+        "commonRank":  7
+    },
+    {
+        "word":  "忘れる",
+        "reading":  "わすれる",
+        "level":  "N4",
+        "commonRank":  8
+    },
+    {
+        "word":  "覚える",
+        "reading":  "おぼえる",
+        "level":  "N4",
+        "commonRank":  9
+    },
+    {
+        "word":  "調べる",
+        "reading":  "しらべる",
+        "level":  "N4",
+        "commonRank":  10
+    },
+    {
+        "word":  "探す",
+        "reading":  "さがす",
+        "level":  "N4",
+        "commonRank":  11
+    },
+    {
+        "word":  "見つける",
+        "reading":  "みつける",
+        "level":  "N4",
+        "commonRank":  12
+    },
+    {
+        "word":  "見つかる",
+        "reading":  "みつかる",
+        "level":  "N4",
+        "commonRank":  13
+    },
+    {
+        "word":  "選ぶ",
+        "reading":  "えらぶ",
+        "level":  "N4",
+        "commonRank":  14
+    },
+    {
+        "word":  "変える",
+        "reading":  "かえる",
+        "level":  "N4",
+        "commonRank":  15
+    },
+    {
+        "word":  "変わる",
+        "reading":  "かわる",
+        "level":  "N4",
+        "commonRank":  16
+    },
+    {
+        "word":  "直す",
+        "reading":  "なおす",
+        "level":  "N4",
+        "commonRank":  17
+    },
+    {
+        "word":  "直る",
+        "reading":  "なおる",
+        "level":  "N4",
+        "commonRank":  18
+    },
+    {
+        "word":  "困る",
+        "reading":  "こまる",
+        "level":  "N4",
+        "commonRank":  19
+    },
+    {
+        "word":  "手伝う",
+        "reading":  "てつだう",
+        "level":  "N4",
+        "commonRank":  20
+    },
+    {
+        "word":  "急ぐ",
+        "reading":  "いそぐ",
+        "level":  "N4",
+        "commonRank":  21
+    },
+    {
+        "word":  "間に合う",
+        "reading":  "まにあう",
+        "level":  "N4",
+        "commonRank":  22
+    },
+    {
+        "word":  "遅れる",
+        "reading":  "おくれる",
+        "level":  "N4",
+        "commonRank":  23
+    },
+    {
+        "word":  "間違える",
+        "reading":  "まちがえる",
+        "level":  "N4",
+        "commonRank":  24
+    },
+    {
+        "word":  "間違う",
+        "reading":  "まちがう",
+        "level":  "N4",
+        "commonRank":  25
+    },
+    {
+        "word":  "落とす",
+        "reading":  "おとす",
+        "level":  "N4",
+        "commonRank":  26
+    },
+    {
+        "word":  "落ちる",
+        "reading":  "おちる",
+        "level":  "N4",
+        "commonRank":  27
+    },
+    {
+        "word":  "拾う",
+        "reading":  "ひろう",
+        "level":  "N4",
+        "commonRank":  28
+    },
+    {
+        "word":  "捨てる",
+        "reading":  "すてる",
+        "level":  "N4",
+        "commonRank":  29
+    },
+    {
+        "word":  "集める",
+        "reading":  "あつめる",
+        "level":  "N4",
+        "commonRank":  30
+    },
+    {
+        "word":  "集まる",
+        "reading":  "あつまる",
+        "level":  "N4",
+        "commonRank":  31
+    },
+    {
+        "word":  "運ぶ",
+        "reading":  "はこぶ",
+        "level":  "N4",
+        "commonRank":  32
+    },
+    {
+        "word":  "片付ける",
+        "reading":  "かたづける",
+        "level":  "N4",
+        "commonRank":  33
+    },
+    {
+        "word":  "並べる",
+        "reading":  "ならべる",
+        "level":  "N4",
+        "commonRank":  34
+    },
+    {
+        "word":  "並ぶ",
+        "reading":  "ならぶ",
+        "level":  "N4",
+        "commonRank":  35
+    },
+    {
+        "word":  "付ける",
+        "reading":  "つける",
+        "level":  "N4",
+        "commonRank":  36
+    },
+    {
+        "word":  "付く",
+        "reading":  "つく",
+        "level":  "N4",
+        "commonRank":  37
+    },
+    {
+        "word":  "消す",
+        "reading":  "けす",
+        "level":  "N4",
+        "commonRank":  38
+    },
+    {
+        "word":  "消える",
+        "reading":  "きえる",
+        "level":  "N4",
+        "commonRank":  39
+    },
+    {
+        "word":  "壊す",
+        "reading":  "こわす",
+        "level":  "N4",
+        "commonRank":  40
+    },
+    {
+        "word":  "壊れる",
+        "reading":  "こわれる",
+        "level":  "N4",
+        "commonRank":  41
+    },
+    {
+        "word":  "汚す",
+        "reading":  "よごす",
+        "level":  "N4",
+        "commonRank":  42
+    },
+    {
+        "word":  "汚れる",
+        "reading":  "よごれる",
+        "level":  "N4",
+        "commonRank":  43
+    },
+    {
+        "word":  "育てる",
+        "reading":  "そだてる",
+        "level":  "N4",
+        "commonRank":  44
+    },
+    {
+        "word":  "育つ",
+        "reading":  "そだつ",
+        "level":  "N4",
+        "commonRank":  45
+    },
+    {
+        "word":  "生まれる",
+        "reading":  "うまれる",
+        "level":  "N4",
+        "commonRank":  46
+    },
+    {
+        "word":  "死ぬ",
+        "reading":  "しぬ",
+        "level":  "N4",
+        "commonRank":  47
+    },
+    {
+        "word":  "太る",
+        "reading":  "ふとる",
+        "level":  "N4",
+        "commonRank":  48
+    },
+    {
+        "word":  "痩せる",
+        "reading":  "やせる",
+        "level":  "N4",
+        "commonRank":  49
+    },
+    {
+        "word":  "疲れる",
+        "reading":  "つかれる",
+        "level":  "N4",
+        "commonRank":  50
+    },
+    {
+        "word":  "治す",
+        "reading":  "なおす",
+        "level":  "N4",
+        "commonRank":  51
+    },
+    {
+        "word":  "治る",
+        "reading":  "なおる",
+        "level":  "N4",
+        "commonRank":  52
+    },
+    {
+        "word":  "笑う",
+        "reading":  "わらう",
+        "level":  "N4",
+        "commonRank":  53
+    },
+    {
+        "word":  "泣く",
+        "reading":  "なく",
+        "level":  "N4",
+        "commonRank":  54
+    },
+    {
+        "word":  "怒る",
+        "reading":  "おこる",
+        "level":  "N4",
+        "commonRank":  55
+    },
+    {
+        "word":  "喜ぶ",
+        "reading":  "よろこぶ",
+        "level":  "N4",
+        "commonRank":  56
+    },
+    {
+        "word":  "驚く",
+        "reading":  "おどろく",
+        "level":  "N4",
+        "commonRank":  57
+    },
+    {
+        "word":  "答える",
+        "reading":  "こたえる",
+        "level":  "N4",
+        "commonRank":  58
+    },
+    {
+        "word":  "頼む",
+        "reading":  "たのむ",
+        "level":  "N4",
+        "commonRank":  59
+    },
+    {
+        "word":  "断る",
+        "reading":  "ことわる",
+        "level":  "N4",
+        "commonRank":  60
+    },
+    {
+        "word":  "守る",
+        "reading":  "まもる",
+        "level":  "N4",
+        "commonRank":  61
+    },
+    {
+        "word":  "受ける",
+        "reading":  "うける",
+        "level":  "N4",
+        "commonRank":  62
+    },
+    {
+        "word":  "渡す",
+        "reading":  "わたす",
+        "level":  "N4",
+        "commonRank":  63
+    },
+    {
+        "word":  "渡る",
+        "reading":  "わたる",
+        "level":  "N4",
+        "commonRank":  64
+    },
+    {
+        "word":  "曲がる",
+        "reading":  "まがる",
+        "level":  "N4",
+        "commonRank":  65
+    },
+    {
+        "word":  "通る",
+        "reading":  "とおる",
+        "level":  "N4",
+        "commonRank":  66
+    },
+    {
+        "word":  "通う",
+        "reading":  "かよう",
+        "level":  "N4",
+        "commonRank":  67
+    },
+    {
+        "word":  "泊まる",
+        "reading":  "とまる",
+        "level":  "N4",
+        "commonRank":  68
+    },
+    {
+        "word":  "着く",
+        "reading":  "つく",
+        "level":  "N4",
+        "commonRank":  69
+    },
+    {
+        "word":  "増える",
+        "reading":  "ふえる",
+        "level":  "N3",
+        "commonRank":  1
+    },
+    {
+        "word":  "増やす",
+        "reading":  "ふやす",
+        "level":  "N3",
+        "commonRank":  2
+    },
+    {
+        "word":  "減る",
+        "reading":  "へる",
+        "level":  "N3",
+        "commonRank":  3
+    },
+    {
+        "word":  "減らす",
+        "reading":  "へらす",
+        "level":  "N3",
+        "commonRank":  4
+    },
+    {
+        "word":  "上がる",
+        "reading":  "あがる",
+        "level":  "N3",
+        "commonRank":  5
+    },
+    {
+        "word":  "上げる",
+        "reading":  "あげる",
+        "level":  "N3",
+        "commonRank":  6
+    },
+    {
+        "word":  "下がる",
+        "reading":  "さがる",
+        "level":  "N3",
+        "commonRank":  7
+    },
+    {
+        "word":  "下げる",
+        "reading":  "さげる",
+        "level":  "N3",
+        "commonRank":  8
+    },
+    {
+        "word":  "進む",
+        "reading":  "すすむ",
+        "level":  "N3",
+        "commonRank":  9
+    },
+    {
+        "word":  "進める",
+        "reading":  "すすめる",
+        "level":  "N3",
+        "commonRank":  10
+    },
+    {
+        "word":  "戻る",
+        "reading":  "もどる",
+        "level":  "N3",
+        "commonRank":  11
+    },
+    {
+        "word":  "戻す",
+        "reading":  "もどす",
+        "level":  "N3",
+        "commonRank":  12
+    },
+    {
+        "word":  "残る",
+        "reading":  "のこる",
+        "level":  "N3",
+        "commonRank":  13
+    },
+    {
+        "word":  "残す",
+        "reading":  "のこす",
+        "level":  "N3",
+        "commonRank":  14
+    },
+    {
+        "word":  "届く",
+        "reading":  "とどく",
+        "level":  "N3",
+        "commonRank":  15
+    },
+    {
+        "word":  "届ける",
+        "reading":  "とどける",
+        "level":  "N3",
+        "commonRank":  16
+    },
+    {
+        "word":  "伝える",
+        "reading":  "つたえる",
+        "level":  "N3",
+        "commonRank":  17
+    },
+    {
+        "word":  "伝わる",
+        "reading":  "つたわる",
+        "level":  "N3",
+        "commonRank":  18
+    },
+    {
+        "word":  "比べる",
+        "reading":  "くらべる",
+        "level":  "N3",
+        "commonRank":  19
+    },
+    {
+        "word":  "似る",
+        "reading":  "にる",
+        "level":  "N3",
+        "commonRank":  20
+    },
+    {
+        "word":  "異なる",
+        "reading":  "ことなる",
+        "level":  "N3",
+        "commonRank":  21
+    },
+    {
+        "word":  "含む",
+        "reading":  "ふくむ",
+        "level":  "N3",
+        "commonRank":  22
+    },
+    {
+        "word":  "含める",
+        "reading":  "ふくめる",
+        "level":  "N3",
+        "commonRank":  23
+    },
+    {
+        "word":  "加える",
+        "reading":  "くわえる",
+        "level":  "N3",
+        "commonRank":  24
+    },
+    {
+        "word":  "加わる",
+        "reading":  "くわわる",
+        "level":  "N3",
+        "commonRank":  25
+    },
+    {
+        "word":  "除く",
+        "reading":  "のぞく",
+        "level":  "N3",
+        "commonRank":  26
+    },
+    {
+        "word":  "防ぐ",
+        "reading":  "ふせぐ",
+        "level":  "N3",
+        "commonRank":  27
+    },
+    {
+        "word":  "避ける",
+        "reading":  "さける",
+        "level":  "N3",
+        "commonRank":  28
+    },
+    {
+        "word":  "支える",
+        "reading":  "ささえる",
+        "level":  "N3",
+        "commonRank":  29
+    },
+    {
+        "word":  "助ける",
+        "reading":  "たすける",
+        "level":  "N3",
+        "commonRank":  30
+    },
+    {
+        "word":  "救う",
+        "reading":  "すくう",
+        "level":  "N3",
+        "commonRank":  31
+    },
+    {
+        "word":  "認める",
+        "reading":  "みとめる",
+        "level":  "N3",
+        "commonRank":  32
+    },
+    {
+        "word":  "許す",
+        "reading":  "ゆるす",
+        "level":  "N3",
+        "commonRank":  33
+    },
+    {
+        "word":  "疑う",
+        "reading":  "うたがう",
+        "level":  "N3",
+        "commonRank":  34
+    },
+    {
+        "word":  "信じる",
+        "reading":  "しんじる",
+        "level":  "N3",
+        "commonRank":  35
+    },
+    {
+        "word":  "確かめる",
+        "reading":  "たしかめる",
+        "level":  "N3",
+        "commonRank":  36
+    },
+    {
+        "word":  "望む",
+        "reading":  "のぞむ",
+        "level":  "N3",
+        "commonRank":  37
+    },
+    {
+        "word":  "感じる",
+        "reading":  "かんじる",
+        "level":  "N3",
+        "commonRank":  38
+    },
+    {
+        "word":  "気付く",
+        "reading":  "きづく",
+        "level":  "N3",
+        "commonRank":  39
+    },
+    {
+        "word":  "気に入る",
+        "reading":  "きにいる",
+        "level":  "N3",
+        "commonRank":  40
+    },
+    {
+        "word":  "慣れる",
+        "reading":  "なれる",
+        "level":  "N3",
+        "commonRank":  41
+    },
+    {
+        "word":  "慣らす",
+        "reading":  "ならす",
+        "level":  "N3",
+        "commonRank":  42
+    },
+    {
+        "word":  "飽きる",
+        "reading":  "あきる",
+        "level":  "N3",
+        "commonRank":  43
+    },
+    {
+        "word":  "悩む",
+        "reading":  "なやむ",
+        "level":  "N3",
+        "commonRank":  44
+    },
+    {
+        "word":  "迷う",
+        "reading":  "まよう",
+        "level":  "N3",
+        "commonRank":  45
+    },
+    {
+        "word":  "辞める",
+        "reading":  "やめる",
+        "level":  "N3",
+        "commonRank":  46
+    },
+    {
+        "word":  "勤める",
+        "reading":  "つとめる",
+        "level":  "N3",
+        "commonRank":  47
+    },
+    {
+        "word":  "稼ぐ",
+        "reading":  "かせぐ",
+        "level":  "N3",
+        "commonRank":  48
+    },
+    {
+        "word":  "払う",
+        "reading":  "はらう",
+        "level":  "N3",
+        "commonRank":  49
+    },
+    {
+        "word":  "支払う",
+        "reading":  "しはらう",
+        "level":  "N3",
+        "commonRank":  50
+    },
+    {
+        "word":  "受け取る",
+        "reading":  "うけとる",
+        "level":  "N3",
+        "commonRank":  51
+    },
+    {
+        "word":  "申し込む",
+        "reading":  "もうしこむ",
+        "level":  "N3",
+        "commonRank":  52
+    },
+    {
+        "word":  "申し出る",
+        "reading":  "もうしでる",
+        "level":  "N3",
+        "commonRank":  53
+    },
+    {
+        "word":  "求める",
+        "reading":  "もとめる",
+        "level":  "N3",
+        "commonRank":  54
+    },
+    {
+        "word":  "得る",
+        "reading":  "える",
+        "level":  "N3",
+        "commonRank":  55
+    },
+    {
+        "word":  "失う",
+        "reading":  "うしなう",
+        "level":  "N3",
+        "commonRank":  56
+    },
+    {
+        "word":  "手に入れる",
+        "reading":  "てにいれる",
+        "level":  "N3",
+        "commonRank":  57
+    },
+    {
+        "word":  "起こる",
+        "reading":  "おこる",
+        "level":  "N3",
+        "commonRank":  58
+    },
+    {
+        "word":  "起こす",
+        "reading":  "おこす",
+        "level":  "N3",
+        "commonRank":  59
+    },
+    {
+        "word":  "続く",
+        "reading":  "つづく",
+        "level":  "N3",
+        "commonRank":  60
+    },
+    {
+        "word":  "行う",
+        "reading":  "おこなう",
+        "level":  "N3",
+        "commonRank":  61
+    },
+    {
+        "word":  "表す",
+        "reading":  "あらわす",
+        "level":  "N3",
+        "commonRank":  62
+    },
+    {
+        "word":  "現れる",
+        "reading":  "あらわれる",
+        "level":  "N3",
+        "commonRank":  63
+    },
+    {
+        "word":  "示す",
+        "reading":  "しめす",
+        "level":  "N3",
+        "commonRank":  64
+    },
+    {
+        "word":  "述べる",
+        "reading":  "のべる",
+        "level":  "N3",
+        "commonRank":  65
+    },
+    {
+        "word":  "訪ねる",
+        "reading":  "たずねる",
+        "level":  "N3",
+        "commonRank":  66
+    },
+    {
+        "word":  "訪れる",
+        "reading":  "おとずれる",
+        "level":  "N3",
+        "commonRank":  67
+    },
+    {
+        "word":  "迎える",
+        "reading":  "むかえる",
+        "level":  "N3",
+        "commonRank":  68
+    },
+    {
+        "word":  "招く",
+        "reading":  "まねく",
+        "level":  "N3",
+        "commonRank":  69
+    },
+    {
+        "word":  "別れる",
+        "reading":  "わかれる",
+        "level":  "N3",
+        "commonRank":  70
+    },
+    {
+        "word":  "付き合う",
+        "reading":  "つきあう",
+        "level":  "N3",
+        "commonRank":  71
+    },
+    {
+        "word":  "暮らす",
+        "reading":  "くらす",
+        "level":  "N3",
+        "commonRank":  72
+    },
+    {
+        "word":  "過ごす",
+        "reading":  "すごす",
+        "level":  "N3",
+        "commonRank":  73
+    },
+    {
+        "word":  "過ぎる",
+        "reading":  "すぎる",
+        "level":  "N3",
+        "commonRank":  74
+    },
+    {
+        "word":  "間に合わせる",
+        "reading":  "まにあわせる",
+        "level":  "N3",
+        "commonRank":  75
+    },
+    {
+        "word":  "おっしゃる",
+        "reading":  "おっしゃる",
+        "level":  "N2",
+        "commonRank":  1
+    },
+    {
+        "word":  "防ぐ",
+        "reading":  "ふせぐ",
+        "level":  "N2",
+        "commonRank":  2
+    },
+    {
+        "word":  "省く",
+        "reading":  "はぶく",
+        "level":  "N2",
+        "commonRank":  3
+    },
+    {
+        "word":  "促す",
+        "reading":  "うながす",
+        "level":  "N2",
+        "commonRank":  4
+    },
+    {
+        "word":  "遂げる",
+        "reading":  "とげる",
+        "level":  "N2",
+        "commonRank":  5
+    },
+    {
+        "word":  "補う",
+        "reading":  "おぎなう",
+        "level":  "N2",
+        "commonRank":  6
+    },
+    {
+        "word":  "伴う",
+        "reading":  "ともなう",
+        "level":  "N2",
+        "commonRank":  7
+    },
+    {
+        "word":  "覆う",
+        "reading":  "おおう",
+        "level":  "N2",
+        "commonRank":  8
+    },
+    {
+        "word":  "整える",
+        "reading":  "ととのえる",
+        "level":  "N2",
+        "commonRank":  9
+    },
+    {
+        "word":  "取り組む",
+        "reading":  "とりくむ",
+        "level":  "N2",
+        "commonRank":  10
+    },
+    {
+        "word":  "見込む",
+        "reading":  "みこむ",
+        "level":  "N2",
+        "commonRank":  11
+    },
+    {
+        "word":  "引き受ける",
+        "reading":  "ひきうける",
+        "level":  "N2",
+        "commonRank":  12
+    },
+    {
+        "word":  "差し支える",
+        "reading":  "さしつかえる",
+        "level":  "N2",
+        "commonRank":  13
+    },
+    {
+        "word":  "設ける",
+        "reading":  "もうける",
+        "level":  "N2",
+        "commonRank":  14
+    },
+    {
+        "word":  "及ぼす",
+        "reading":  "およぼす",
+        "level":  "N2",
+        "commonRank":  15
+    }
 ]
