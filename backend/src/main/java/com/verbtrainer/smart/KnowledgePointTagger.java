@@ -1,0 +1,5 @@
+package com.verbtrainer.smart;
+import com.verbtrainer.dictionary.VerbEntry;import com.verbtrainer.conjugation.VerbClass;import org.springframework.stereotype.Component;import java.util.*;
+@Component public class KnowledgePointTagger{
+ public List<String>tag(VerbEntry v,ConjugationType c,QuestionType q){List<String>x=new ArrayList<>();x.add("VERB:"+v.lemma);x.add("VERB_CLASS:"+v.verbClass);x.add("CONJUGATION_TYPE:"+c);if(v.verbClass==VerbClass.GODAN&&(c==ConjugationType.TE||c==ConjugationType.PAST)){char e=v.lemma.charAt(v.lemma.length()-1);String rule="むぶぬ".indexOf(e)>=0?"MU_BU_NU_TO_NDE":e=='く'?"KU_TO_ITE":"うつる".indexOf(e)>=0?"U_TSU_RU_TO_TTE":e=='ぐ'?"GU_TO_IDE":"SU_TO_SHITE";x.add("GODAN_ENDING_RULE:"+rule);}if(Set.of("行く","ある","くださる","なさる","いらっしゃる","おっしゃる").contains(v.lemma))x.add("EXCEPTION_VERB:"+v.lemma);if(v.verbClass==VerbClass.SURU&&v.lemma.length()>2)x.add("SURU_COMPOUND");if(v.verbClass==VerbClass.KURU)x.add("KURU_READING_CHANGE");if(q==QuestionType.CONJUGATION_TO_DICTIONARY)x.add("REVERSE_RECOGNITION:"+c+"_TO_DICTIONARY");return x;}
+}

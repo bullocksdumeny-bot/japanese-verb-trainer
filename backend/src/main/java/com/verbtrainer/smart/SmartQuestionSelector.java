@@ -1,0 +1,1 @@
+package com.verbtrainer.smart;public interface SmartQuestionSelector{TrainingSessionPlan createPlan(CreateTrainingSessionRequest request);}

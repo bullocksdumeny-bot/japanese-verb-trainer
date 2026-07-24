@@ -1,0 +1,11 @@
+dictionary_form,reading,jlpt_level,source,confidence
+行く,いく,N5,SEED_DATA,MEDIUM
+来る,くる,N5,SEED_DATA,MEDIUM
+する,する,N5,SEED_DATA,MEDIUM
+食べる,たべる,N5,SEED_DATA,MEDIUM
+見る,みる,N5,SEED_DATA,MEDIUM
+読む,よむ,N4,SEED_DATA,MEDIUM
+書く,かく,N4,SEED_DATA,MEDIUM
+話す,はなす,N4,SEED_DATA,MEDIUM
+帰る,かえる,N4,SEED_DATA,MEDIUM
+勉強する,べんきょうする,N3,SEED_DATA,MEDIUM

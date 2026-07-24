@@ -1,0 +1,11 @@
+package com.verbtrainer.api;
+import com.verbtrainer.conjugation.*;import com.verbtrainer.dictionary.*;import com.verbtrainer.learning.*;
+import jakarta.validation.constraints.NotBlank;import org.springframework.web.bind.annotation.*;import java.time.*;import java.util.*;
+@RestController @RequestMapping("/api/training") public class TrainingController{
+ private final VerbRepository verbs;private final StudyRepository study;private final ConjugationService conjugator;
+ public TrainingController(VerbRepository v,StudyRepository s,ConjugationService c){verbs=v;study=s;conjugator=c;}
+ @GetMapping("/daily") public List<Map<String,Object>> daily(){var due=study.findByNextReviewBeforeOrderByNextReview(LocalDateTime.now());var pool=verbs.findAll();if(pool.isEmpty())return List.of();List<Map<String,Object>> out=new ArrayList<>();for(int i=0;i<Math.min(10,Math.max(5,pool.size()));i++){var v=pool.get(i%pool.size());var f=ConjugationForm.values()[1+(i%(ConjugationForm.values().length-1))];var answer=conjugator.conjugate(v.lemma,v.verbClass).stream().filter(x->x.form()==f).findFirst().orElseThrow().value();out.add(Map.of("verbId",v.id,"lemma",v.lemma,"reading",v.reading,"form",f,"formLabel",f.label,"answer",answer));}return out;}
+ public record Submission(Long verbId,@NotBlank String form,@NotBlank String answer){}
+ @PostMapping("/submit") public Map<String,Object> submit(@RequestBody Submission s){var v=verbs.findById(s.verbId()).orElseThrow();var f=ConjugationForm.valueOf(s.form());var result=conjugator.conjugate(v.lemma,v.verbClass).stream().filter(x->x.form()==f).findFirst().orElseThrow();boolean ok=result.value().equals(s.answer().trim());var item=study.findByVerbIdAndForm(v.id,f.name()).orElseGet(()->new StudyItem(v.id,f.name()));item.review(ok);study.save(item);return Map.of("correct",ok,"expected",result.value(),"steps",result.steps(),"nextReview",item.nextReview);}
+ @GetMapping("/stats") public Map<String,Object> stats(){var all=study.findAll();return Map.of("reviewed",all.size(),"errors",all.stream().mapToInt(x->x.errorCount).sum(),"due",study.findByNextReviewBeforeOrderByNextReview(LocalDateTime.now()).size(),"streak",all.stream().mapToInt(x->x.correctStreak).max().orElse(0));}
+}

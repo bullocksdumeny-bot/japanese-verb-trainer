@@ -1,0 +1,10 @@
+spring:
+  jpa:
+    open-in-view: false
+server:
+  forward-headers-strategy: framework
+  shutdown: graceful
+logging:
+  level:
+    root: INFO
+    org.hibernate.SQL: WARN

@@ -1,0 +1,34 @@
+spring:
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/verbtrainer}
+    username: ${DB_USER:verbtrainer}
+    password: ${DB_PASSWORD:verbtrainer}
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    open-in-view: false
+  flyway:
+    enabled: true
+server:
+  port: 8080
+ai:
+  enabled: ${AI_ENABLED:false}
+  base-url: ${AI_BASE_URL:}
+  api-key: ${AI_API_KEY:}
+  model: ${AI_MODEL:}
+training:
+  smart-selection:
+    due-review-ratio: 0.40
+    weakness-ratio: 0.30
+    new-word-ratio: 0.20
+    exploration-ratio: 0.10
+    due-review-weight: 100
+    weakness-weight: 80
+    historical-error-weight: 60
+    recency-gap-weight: 30
+    novelty-weight: 20
+    mastered-penalty: 70
+    recent-repetition-penalty: 90
+    recent-question-window: 30
+    mastered-score-threshold: 85
+    mastered-correct-streak: 5
