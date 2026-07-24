@@ -27,6 +27,7 @@ training:
     historical-error-weight: 60
     recency-gap-weight: 30
     novelty-weight: 20
+    commonness-weight: 0.5
     mastered-penalty: 70
     recent-repetition-penalty: 90
     recent-question-window: 30

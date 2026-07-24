@@ -1,22 +1,16 @@
-# JLPT level data
+# JLPT 动词等级数据
 
-JLPT 官方不公开固定、完整的词汇等级表。本项目的等级是个人学习用途的近似分类，
-不是官方认证。仓库只附带用于开发与测试的小型种子数据，不包含商业词表。
+JLPT 官方不公开固定、完整的词汇等级表。本项目的等级用于个人学习，不代表官方完整词表。
 
-等级与 JMdict 分开保存在 `jlpt_vocabulary_levels`。没有记录的词是
-`UNCLASSIFIED`，不会自动推断，也不会进入默认智能训练。
+JMdict 仍是唯一词典，负责动词原形、读音、类别和释义。`verb_entry` 上的 `jlpt_level` 与
+`common_rank` 仅补充分级训练信息：
 
-导入支持 UTF-8 CSV/TSV，必需列：
+- `jlpt_level`：`N5`、`N4`、`N3` 或 `N2`；
+- `common_rank`：等级内常用度，数字越小越优先。
 
-```text
-dictionary_form,reading,jlpt_level
-```
+基础数据维护在
+`backend/src/main/resources/jlpt-verb-levels.json`。应用每次启动时按“原形 + 读音”精确匹配
+JMdict 词条并同步两个字段。找不到或匹配不唯一的条目会记录警告并跳过。
 
-可选列为 `source` 和 `confidence`。运行：
-
-```bash
-java -jar app.jar --import-jlpt-levels=/data/jlpt-verbs.csv
-```
-
-导入同时匹配原形与读音；唯一匹配才写入。多候选和无匹配会进入报告，不会静默选择。
-相同词条与等级重复导入保持幂等。数据发布者需自行确认来源许可证。
+分级训练只查询用户当前选择的精确等级，不累计低等级词汇；未分类词条不会进入分级训练。
+扩充词表时直接编辑 JSON，重启应用即可同步。
