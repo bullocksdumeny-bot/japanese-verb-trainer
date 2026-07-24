@@ -1,0 +1,31 @@
+@media(max-width:800px){
+  body{font-size:16px;-webkit-text-size-adjust:100%;overflow-x:hidden}
+  main{width:100%;min-height:100dvh;padding:24px 16px calc(88px + env(safe-area-inset-bottom))}
+  .page-title{font-size:28px;line-height:1.25}
+  .eyebrow{font-size:13px}
+  .card{padding:20px 16px;border-radius:12px}
+  .practice{width:100%;max-width:none;margin:22px 0}
+  .question-word{font-size:48px;margin:22px 0 12px}
+  .practice h3{font-size:18px;line-height:1.55}
+  .answer-input{width:100%;max-width:none}
+  .answer-input .el-input__wrapper{min-height:50px;font-size:18px}
+  .practice .el-button{min-height:46px;padding:12px 22px;font-size:16px}
+  .hero{margin-bottom:18px}
+  .hero .el-progress--circle{width:54px!important;height:54px!important}
+  .mobile-nav{height:calc(64px + env(safe-area-inset-bottom));padding-bottom:env(safe-area-inset-bottom);align-items:stretch}
+  .mobile-nav a{min-width:64px;display:grid;place-items:center;padding:10px 12px;font-size:15px}
+  .level-cards{gap:8px}
+  .level-cards button{min-height:92px;padding:14px 8px}
+  .check-grid{grid-template-columns:1fr}
+  .config-layout{margin-top:20px}
+  .config-layout aside.options-panel{padding:20px 16px}
+  .answer-options{display:grid;width:100%;grid-template-columns:1fr}
+  .answer-options .el-radio-button{width:100%}
+  .answer-options .el-radio-button__inner{width:100%;min-height:48px;display:grid;place-items:center;font-size:16px}
+  .result-box{padding:16px}
+}
+@media(max-width:380px){
+  main{padding-left:12px;padding-right:12px}
+  .page-title{font-size:25px}
+  .question-word{font-size:42px}
+}
