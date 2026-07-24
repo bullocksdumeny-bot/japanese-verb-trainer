@@ -1,0 +1,18 @@
+{
+  "name": "Japanese Verb Trainer（日语动词活用训练器）",
+  "short_name": "日语活用",
+  "description": "面向中文学习者的日语动词活用训练器",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f1e8",
+  "theme_color": "#173853",
+  "icons": [
+    {
+      "src": "./apple-touch-icon.png",
+      "sizes": "1254x1254",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
