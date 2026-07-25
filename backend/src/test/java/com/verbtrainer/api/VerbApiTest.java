@@ -3,5 +3,11 @@ import com.verbtrainer.VerbTrainerApplication;import com.verbtrainer.conjugation
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 @SpringBootTest(classes=VerbTrainerApplication.class) @AutoConfigureMockMvc class VerbApiTest{
  @Autowired MockMvc mvc;@Autowired VerbRepository verbs; @Test void searchWorks()throws Exception{mvc.perform(get("/api/verbs/search").param("q","帰る")).andExpect(status().isOk());}
+ @Test void exactDictionaryFormRanksBeforeContainingExpression()throws Exception{
+  String lemma="寝る",reading="ねる";
+  verbs.save(new VerbEntry("泥のように"+lemma,"どろのように"+reading,"expression",VerbClass.ICHIDAN,"v1"));
+  verbs.save(new VerbEntry(lemma,reading,"to sleep",VerbClass.ICHIDAN,"v1"));
+  mvc.perform(get("/api/verbs/search").param("q",lemma)).andExpect(status().isOk()).andExpect(jsonPath("$[0].lemma").value(lemma));
+ }
  @Test void conjugationsExposeFriendlyDisplayFields()throws Exception{var verb=verbs.findFirstByLemma("読む").orElseGet(()->verbs.save(new VerbEntry("読む","よむ","读",VerbClass.GODAN,"v5m")));mvc.perform(get("/api/verbs/"+verb.id)).andExpect(status().isOk()).andExpect(jsonPath("$.conjugations[?(@.type == 'TE')].displayName").value("て形（连接、请求等）")).andExpect(jsonPath("$.conjugations[?(@.type == 'TE')].chineseName").value("て形")).andExpect(jsonPath("$.conjugations[?(@.type == 'TE')].value").value("読んで"));}
 }
