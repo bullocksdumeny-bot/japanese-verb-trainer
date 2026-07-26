@@ -85,7 +85,7 @@ public class JlptVerbLevelInitializer implements ApplicationRunner {
         unmatched.add(new UnmatchedEntry(entry.word(), entry.reading(), entry.level(), reason));
         continue;
       }
-      var verb = matches.getFirst();
+      var verb = matches.get(0);
       verb.jlptLevel = entry.level();
       verb.commonRank = entry.commonRank();
       verbs.save(verb);
