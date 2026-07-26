@@ -22,6 +22,8 @@ docker compose up --build
 - SM-2 思想的间隔复习（1、4 天，之后按易度系数扩展）
 - OpenAI Compatible AI 中文解释；Key 仅保存在后端
 - N5～N2 分级智能训练：到期复习、历史错误、薄弱知识点、新词与最近重复综合评分
+- 规则驱动学习：等级 → 活用主题 → 具体知识点 → 规则详情 → 20 题专项训练
+- N5 首批知识点覆盖五段、一段、する、来る的ます形与て形；后续等级沿用同一模型扩充
 - 六种训练模式、六种题型、17 种活用范围、持久化训练会话与训练总结
 - JMdict XML 流式导入：`POST /api/verbs/import`，multipart 字段名 `file`
 
@@ -52,6 +54,12 @@ API：
 - `POST /api/v1/training/sessions/{sessionId}/questions/{questionId}/answer`
 - `GET /api/v1/training/sessions/{sessionId}/summary`
 - `GET /api/v1/training/sessions/policy/{level}`
+- `GET /api/v1/knowledge-points?level=N5`
+- `GET /api/v1/knowledge-points/{code}`
+
+创建专项训练时，在原有 Session 请求中传入 `knowledgePointCode`。后端会强制使用该
+知识点的 JLPT 等级、动词类别和活用类型筛选题目；例如 `N5_TE_ICHIDAN` 的题目不会
+出现五段、する或来る动词。未传该字段时保持原有智能训练行为。
 
 JLPT 数据与智能出题细节见 [JLPT 数据说明](docs/jlpt-level-data.md)、
 [智能选题说明](docs/smart-question-selection.md) 和 [架构说明](docs/architecture.md)。
@@ -61,5 +69,6 @@ Ubuntu 个人服务器的生产部署、备份、恢复和更新步骤见
 
 ## 架构约束
 
-`conjugation` 是确定性领域核心，不依赖 AI 或数据库。词典只负责识别类别；
+`knowledge` 决定“正在学习哪条规则”，`conjugation` 是确定性领域核心并决定答案，
+不依赖 AI 或数据库。词典只负责识别类别；
 AI 请求必须携带规则引擎已经算出的 `correct`，且 AI 返回值从不进入判分流程。
